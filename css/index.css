@@ -1,0 +1,239 @@
+/*
+Template Name: Rd Jewellers
+File: Layout CSS
+Author: TemplatesOnWeb
+Author URI: https://www.templateonweb.com/
+Licence: <a href="https://www.templateonweb.com/license">Website Template Licence</a>
+*/
+
+
+/*********************center****************/
+.carousel-caption{
+	background-color: var(--black_transparent)!important;
+	bottom:0;
+	left:0;
+	color:var(--bs-white);
+	width:100%;
+	height:100%;
+    padding: 180px 140px 0px 140px;
+	text-align:left;
+ }
+
+.carousel-caption h1{
+   font-size:80px;
+   color:var(--bs-white);
+ }
+
+.carousel-control-next, .carousel-control-prev{
+	width: 10%;
+}
+/*********************center_end****************/
+
+
+/*********************shop****************/
+.shop_1_inner_left .product_options {
+	z-index:3;
+}
+.shop_1_inner_left .shop_1_left2{
+	z-index:3;
+	transition: all 300ms linear 0ms;  
+	transform: translateX(110%);
+}
+.shop_1_inner_left:hover .shop_1_left2{
+	     transform: translateY(0)!important;;
+	  }
+
+.image_overlay_animation{
+	z-index:2;
+	transition: 0.3s;
+    display:block;
+	opacity:0;
+	transform: scale(1.5);
+}
+.shop_1_inner_left:hover .image_overlay_animation{
+	 /* display:block!important; */
+	 transition: 0.3s;
+	 opacity:1;
+	 transform: scale(1);
+}
+
+.cart_icon{
+	display:none!important;
+	 transition: 0.3s
+}
+.shop_1_inner_left:hover .cart_icon{
+	display:inline-block!important;
+	 transition: 0.3s;
+}
+
+#shop .modal-dialog {
+	max-width: 800px;
+}
+.modal-content{
+	background:var(--bs-white)!important;
+}
+
+.cart_icon {
+	width:40px;
+	height:40px;
+	line-height:40px;
+	transition: 0.3s;
+	background:var(--bs-white);
+}
+.cart_icon:hover {
+	background:var(--primary);
+	transition: 0.3s;
+	color:var(--bs-white);
+}
+
+#pref .modal-dialog {
+	max-width: 800px;
+}
+/*********************shop_end****************/
+
+/*********************explore****************/
+#explore {
+    background-image: url(../image/2.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+.line:before {
+    display: inline-block;
+    width: 10%;
+    height: 2px;
+    background-color: var(--bs-white);
+    vertical-align: middle;
+    margin-right: 2%;
+    content: "";
+}
+.line:after {
+    display: inline-block;
+    width: 10%;
+    height: 2px;
+    background-color: var(--bs-white);
+    vertical-align: middle;
+    margin-left: 2%;
+    content: "";
+}
+/*********************explore_end****************/
+
+/*********************advan****************/
+.advan_1_left span {
+    display: inline-block;
+    background:  var(--secondry);
+    color: var(--bs-white);
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 115px;
+    font-size: 50px;
+    border: 2px solid var(--secondry);
+	transition: 0.3s;
+}
+.advan_1_left span:hover {
+   transition: 0.3s;
+   background: none;
+    color: var(--secondry);
+}
+.line_1 {
+    border-color: var(--secondry);
+    border-width: 2px;
+    width: 20%;
+}
+/*********************advan_end****************/
+
+
+
+@media screen and (max-width : 767px){
+.carousel-caption {
+    position:static!important;
+	padding:20px 15px 20px 15px;
+	background:var(--bs-dark)!important;
+	text-align:left!important;
+}
+.carousel-caption h1 {
+    font-size: 40px;
+	width:100%!important;
+}
+.carousel-caption p {
+   width:100%!important;
+}
+.carousel-caption .button {
+   padding:10px 15px;
+}
+.shop_top_right {
+	margin-top:15px;
+	text-align:left!important;
+}
+.earn_1_left_inner_right{
+	margin-top:15px;
+}
+.earn_1_right{
+	margin-top:20px;
+}
+.explore_1 .w-50{
+	width:100%!important;
+}
+ }
+
+
+@media (min-width:576px) and (max-width:767px) {
+
+ }
+ 
+@media (min-width:768px) and (max-width:991px) {
+.center_home img{
+   min-height:550px;
+ }
+.carousel-caption h1 {
+    font-size: 45px;
+}
+
+.carousel-caption br {
+    display:none;
+}
+.carousel-caption p {
+  width:60%!important;
+}
+.carousel-caption{
+	  padding: 70px 70px 0px 70px;
+ }
+
+ .explore_1 .w-50{
+	 width:60%!important;
+ }
+}
+@media (min-width:992px) and (max-width:1200px) {
+.center_home img{
+   min-height:600px;
+ }
+.carousel-caption h1 {
+    font-size: 50px;
+}
+
+.carousel-caption{
+	padding: 130px 100px 0px 100px;
+ }
+.advan_1_left  .fs-4{
+	font-size: 18px!important;
+}
+ }
+
+@media (min-width:1201px) and (max-width:1350px) {
+.center_home img{
+   min-height:680px;
+ }
+.carousel-caption h1 {
+    font-size: 60px;
+}
+ }
+@media screen and (min-width : 1400px){
+.carousel-caption{
+	padding: 220px 140px 0px 160px;
+ }
+
+ }
+
+
+ 

@@ -1,0 +1,232 @@
+/*
+Template Name: Rd Jewellers
+File: Layout CSS
+Author: TemplatesOnWeb
+Author URI: https://www.templateonweb.com/
+Licence: <a href="https://www.templateonweb.com/license">Website Template Licence</a>
+*/
+
+
+/*********************shop****************/
+.shop_pg1_right1 .form-check {
+    margin-left: 10px;
+}
+.shop_pg1_right1 .form-check-input {
+   border-radius:0!important;
+   border-color:var(--bs-dark);
+   width: 1.2em;
+    height: 1.2em; 
+    margin-top: 0.20em;
+	margin-right:10px;
+}
+.shop_pg1_right1 .form-check-input:focus {
+    border-color:var(--primary); 
+    outline: 0;
+    box-shadow: none;
+}
+.shop_pg1_left .modal-dialog {
+	max-width: 800px;
+}
+
+.shop_dt2 .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: var(--bs-white);
+    border:none;
+	background:var(--secondry);
+}
+.tab_click .nav-link {
+    border:none;
+    padding: 15px 40px;
+    color: var(--sedondry);
+    border:none;
+	background:var(--bg_primary_light);
+    transition: 0.3s;
+	border-radius:0;
+}
+.tab_click .nav-link:hover {
+    color: var(--bs-white);
+	background:var(--secondry);
+}
+#shop_o .modal-dialog {
+	max-width: 800px;
+}
+
+.cart_1 td{
+  padding-top:20px;
+  padding-bottom:20px;
+ }
+.cart_1 th{
+  padding-top:20px;
+  padding-bottom:20px;
+ }
+.cart_2_left td{
+  padding:15px 15px;
+ }
+/*********************shop_end****************/
+
+/*************** Lens Starts *************/
+
+    .gallery-container {
+     /* position: relative;*/
+      width: 100%;
+    }
+
+    .mySwiperMain {
+      width: 100%;
+      height: 500px;
+      position: relative;
+      overflow: hidden;
+    }
+    .mySwiperMain .swiper-slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      cursor: crosshair;
+    }
+
+    /* Lens overlay */
+    .lens {
+      position: absolute;
+      border: 2px solid #007aff;
+      background-color: rgba(255, 255, 255, 0.3);
+      display: none;
+      pointer-events: none;
+      z-index: 10;
+    }
+
+    /* Zoom box */
+    .zoom-box {
+      /* border: 1px solid #ccc; */
+      background-repeat: no-repeat;
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 101%;
+      z-index: 10;
+      width: 100%;
+      height: 100%;
+    }
+
+    /* Thumbs slider */
+    .mySwiperThumbs {
+      width: 100%;
+      margin-top: 15px;
+    }
+    .mySwiperThumbs .swiper-slide {
+      opacity: 0.5;
+      cursor: pointer;
+      transition: opacity 0.3s ease, border 0.3s ease;
+      box-sizing: border-box;
+    }
+    .mySwiperThumbs .swiper-slide-thumb-active,
+    .mySwiperThumbs .swiper-slide:hover {
+      opacity: 1;
+      border: 2px solid #007aff;
+    }
+    .mySwiperThumbs img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* Responsive behavior */
+    @media (max-width: 768px) {
+      .mySwiperThumbs,
+      .zoom-box,
+      .lens {
+        display: none !important;
+      }
+      .mySwiperMain {
+        height: auto;
+      }
+    }
+	
+	/*************** Lens ends *************/
+
+
+
+@media screen and (max-width : 767px){
+.shop_pg1_left1_right{
+	margin-top:15px;
+}
+.shop_pg1_right{
+	margin-top:20px;
+	padding-left:0!important;
+}
+.shop_dt_right{
+	margin-top:20px;
+	padding-left:0!important;
+}
+.tab_click .nav-link {
+    padding: 15px 20px;
+	font-size:16px;
+}
+.profile1_inner {
+    padding: 30px 15px!important;
+}
+.profile3_inner {
+    padding: 30px 15px!important;
+}
+.profile3_inner1_right{
+	margin-top:20px;
+}
+.cart_2_left .input-group{
+  width:100%!important;
+ }
+.cart_2_right {
+  margin-top:15px;
+  text-align:left!important;
+ }
+ }
+
+
+@media (min-width:576px) and (max-width:767px) {
+.cart_2_left .input-group{
+  width:70%!important;
+ }
+.cart_2_right {
+  margin-top:0;
+  text-align:right!important;
+ }
+ }
+ 
+@media (min-width:768px) and (max-width:991px) {
+.shop_pg1_right{
+	padding-left:0!important;
+}
+.shop_dt_right{
+	padding-left:0!important;
+}
+.shop_pg1_right1  ul img{
+	width:60px;
+}
+.cart_2_left .input-group{
+  width:70%!important;
+ }
+.shop_1_left3  .fs-3{
+	font-size:19px!important;
+}
+
+.tab_click .nav-link {
+    padding: 15px 20px;
+    font-size:16px;
+}
+.gallery-container{
+	top:0!important;
+}
+}
+@media (min-width:992px) and (max-width:1200px) {
+.shop_1_left3  .fs-3{
+	font-size:20px!important;
+}
+.gallery-container{
+	top:0!important;
+}
+ }
+
+@media (min-width:1201px) and (max-width:1350px) {
+
+ }
+@media screen and (min-width : 1400px){
+
+
+ }
